@@ -1,0 +1,102 @@
+
+ .root{
+   -fx-background-color:#013220;
+-fx-border-width:5px;
+-fx-border-color:blue;
+
+}
+
+
+
+
+
+.label {
+-fx-text-fill:WHITE;
+-fx-font-size:20px;
+-fx-font-weight:bold;
+  -fx-background-color:#013220;
+}
+
+
+.text-field {
+-fx-text-fill:WHITE;
+-fx-font-size:30px;
+-fx-font-weight:bold;
+  -fx-background-color:BLUE;
+}
+
+
+    .button{
+           -fx-font-size: 16px;
+          -fx-text-fill:gray;
+          -fx-text-fill:BLACK;
+           -fx-font-weight:bold;
+
+    }
+
+        .button:hover{
+         -fx-text-fill:WHITE;
+           -fx-font-size:16px;
+             -fx-font-weight:bold;
+            -fx-background-color:BLUE;
+        }
+
+
+
+
+  .glyph-icon {
+     -fx-fill:WHITE;
+    }
+
+
+
+#aesomeUp
+ {
+  -fx-fill:blue;
+}
+
+#aesomeCan
+ {
+  -fx-fill:blue;
+}
+
+#dateP
+ {
+  -fx-fill:blue;
+  -fx-background-color:transparent;
+       -fx-font-size:20px;
+             -fx-font-weight:bold;
+}
+
+
+
+
+.button:hover > #aesomeUp
+ {
+  -fx-fill:red;
+}
+
+.button:hover > #aesomeCan
+ {
+  -fx-fill:red;
+}
+
+
+
+
+.table-view .column-header,
+.table-view .column-header-background .filler {
+    -fx-background-color:  #a194dd;
+}
+
+
+.table-view .cell{
+   -fx-cell-size: 35;
+  -fx-alignment:center-left;
+   -fx-font-size:20px;
+   -fx-font-weight:bold;
+  -fx-text-fill:#013220;
+  -fx-alignment: CENTER_LEFT;
+
+
+}

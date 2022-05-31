@@ -1,0 +1,11 @@
+.tab-pane .tab
+{
+    -fx-background-color: linear-gradient(to bottom, repeat, #CCCCCC , #808080 );
+    -fx-pref-width: 150.0;
+}
+
+.tab-pane > .tab-header-area > .headers-region > .tab > .tab-container > .tab-label {
+    -fx-alignment: CENTER;
+     -fx-pref-width: 150.0;
+    -fx-text-fill: -fx-text-base-color;
+}

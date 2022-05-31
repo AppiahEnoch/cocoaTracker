@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane prefHeight="654.0" prefWidth="524.0" stylesheets="@tabs.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cocoaRecord.editRecord">
+   <center>
+      <VBox prefHeight="596.0" prefWidth="524.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="ID">
+                     <font>
+                        <Font name="Arial Black" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="txtID" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="###" wrappingWidth="79.609375">
+                     <font>
+                        <Font name="Arial Black" size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="111.0" prefWidth="524.0" spacing="5.0">
+               <children>
+                  <ImageView fx:id="imvFarmer" fitHeight="149.0" fitWidth="167.0" layoutX="337.0" layoutY="10.0" onMouseReleased="#getImage" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/icons8_team_480px.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="118.0" prefHeight="0.0" prefWidth="702.0" />
+            <HBox alignment="CENTER" prefHeight="44.0" prefWidth="763.0">
+               <children>
+                  <ImageView fitHeight="37.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/icons8_user_48px_3.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <JFXTextField fx:id="tfName" focusColor="#4406ee" onKeyReleased="#checkName" prefHeight="31.0" prefWidth="411.0" promptText="FARMER'S NAME" unFocusColor="#11f0cf">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXTextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="118.0" prefHeight="44.0" prefWidth="763.0">
+               <children>
+                  <ImageView fitHeight="37.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/icons8_calendar_25_480px.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <JFXDatePicker fx:id="dateP" defaultColor="#8a8383" editable="false" prefHeight="44.0" prefWidth="412.0" promptText="CHOOSE DATE OF BIRTH" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="162.0" prefHeight="44.0" prefWidth="763.0">
+               <children>
+                  <ImageView fitHeight="37.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/icons8_house_48px_1.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <JFXTextField fx:id="tfTown" focusColor="#4406ee" onKeyReleased="#checkTown" prefHeight="31.0" prefWidth="411.0" promptText="FARMER'S TOWN" unFocusColor="#11f0cf" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="206.0" prefHeight="44.0" prefWidth="763.0">
+               <children>
+                  <ImageView fitHeight="39.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/phoxetttr.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <JFXTextField fx:id="tfMobile" focusColor="#4406ee" onKeyReleased="#checkLocation" prefHeight="31.0" prefWidth="411.0" promptText="Eg. 0249619639" unFocusColor="#11f0cf" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="250.0" prefHeight="44.0" prefWidth="763.0">
+               <children>
+                  <ImageView fitHeight="44.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/leaf1.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <JFXTextField fx:id="tfSize" focusColor="#4406ee" onKeyReleased="#checkSize" prefHeight="31.0" prefWidth="411.0" promptText="FARM SIZE IN ACRE   Eg. 2" unFocusColor="#11f0cf" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="294.0" prefHeight="44.0" prefWidth="763.0">
+               <children>
+                  <ImageView fitHeight="38.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/cocobag.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <JFXTextField fx:id="tfBags" editable="false" focusColor="#4406ee" prefHeight="31.0" prefWidth="411.0" promptText="EXPECTED NUMBER OF COCOA BAGS" unFocusColor="#11f0cf" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="382.0" prefHeight="79.0" prefWidth="524.0">
+               <children>
+                  <Button fx:id="btClear" cancelButton="true" contentDisplay="TOP" mnemonicParsing="false" onAction="#clear" prefHeight="32.0" prefWidth="78.0" text="DELETE">
+                     <graphic>
+                        <FontAwesomeIconView fx:id="aesomeCan" disable="true" fill="#440ac9" glyphName="TRASH" size="25" />
+                     </graphic>
+                  </Button>
+                  <Region prefHeight="89.0" prefWidth="135.0" />
+                  <Button fx:id="btSend" contentDisplay="TOP" defaultButton="true" layoutX="358.0" layoutY="16.0" mnemonicParsing="false" onAction="#submit" prefHeight="62.0" prefWidth="83.0" text="SUBMIT">
+                     <graphic>
+                        <FontAwesomeIconView fx:id="aesomeUp" disable="true" fill="#440ac9" glyphName="SEND" size="25" />
+                     </graphic>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+   <top>
+      <HBox alignment="CENTER" prefHeight="0.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+         <children>
+            <FontAwesomeIconView disable="true" glyphName="SEARCH" size="30" />
+            <JFXTextField fx:id="tfSearch" alignment="CENTER" onKeyReleased="#fetchDataFromDatabase" prefHeight="44.0" prefWidth="530.0" promptText="Enter ID or Mobile" />
+         </children></HBox>
+   </top>
+</BorderPane>
